@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="PlacesDesign.css" rel="stylesheet" />
+  <link rel="icon" href="..\images\esig.png">
+  <title>Dream Places</title>
+</head>
+
+<body style="background-color:#FADDF1;color:#D98880;">
+  <div id="header">
+    <h1 style="font-family:Georgia;color:#FADDF1;text-align:center">The View</h1>
+    <h3 style="font-family:Georgia;color:#FADDF1;text-align:center"><q><i>The rough and tiring typhoon has passed. Now I can see a thousand miles in front of me</i></q></h3>
+    <h4 style="font-family:Georgia;color:#FADDF1;text-align:center"><u><i> Martin Ryan C. Diño</i></u></h4>
+	<a href="../LandingPage.html"><img src="../Images/homebtn.png" height="24" width="24" alt="Home" title="Home" class="effect"></a>
+  </div>
+
+  <div id="content">
+    <hr width="80%" size="2" color="#D98880">
+    <br>
+    <h1 id="hover-title"> DREAM PLACES TO VISIT </h1>
+	<hr width="80%" size="2" color="#D98880">
+    <img width="576" src="../Images/template.png" usemap="#image_map">
+    <map name="image_map">
+      <area alt="Maldives" title="Maldives" href="Maldives.html" coords="227,85 227,403 201,417 182,432 27,281" shape="polygon" onmouseover="updateTitle('Maldives')">
+      <area alt="Tokyo" title="Tokyo" href="Tokyo.html" coords="369,958 369,690 396,673 416,655 423,646 553,774" shape="polygon" onmouseover="updateTitle('Tokyo, Japan')">
+      <area alt="Paris" title="Paris" href="Paris.html" coords="265,78 517,77 518,449 408,445 361,407 313,390 264,390" shape="polygon" onmouseover="updateTitle('Paris, France')">
+      <area alt="Seoul" title="Seoul" href="Seoul.html" coords="290,544,149" shape="circle" onmouseover="updateTitle('Seoul, South Korea')">
+      <area alt="Rome" title="Rome" href="Rome.html" coords="64,716,331,962" shape="rect" onmouseover="updateTitle('Rome, Italy')">
+    </map>
+    <br>
+    <hr width="80%" size="2" color="#D98880">
+  </div>
+
+  <script>
+    function updateTitle(title) {
+      document.getElementById('hover-title').innerHTML = title;
+    }
+  </script>
+</body>
+</html>
